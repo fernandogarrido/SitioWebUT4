@@ -1,24 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-       
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <h1><center>Noticias Deportivas </center></h1>
-<h2><center><b>Fútbol</b></center></h2>
-<h3>El Real Madrid lider de la liga</h3>
-<br>El Real Madrid junto con un <b>gran</b> Isco Alarcón sigue lider de la liga 19-20, seguido del <b>Barcelona</b> que sigue de cerca al líder a solo 3 puntos de diferencia.</br>
-<center><img src="https://www.diariogol.com/uploads/s1/10/13/89/64/isco-alarcon-y-fede-valverde_15_970x597.jpeg" alt="Isco y Valverde"width=600></center>
-<h3>Partido entre Real Madrid y el Osasuna</h3>
-<br>Ganó el <b>Real Madrid </b>1-4 frente a un <b>Osasuna</b> que empezo marcando y en varias ocasiones les metió en problemas, varios intentos del Osasuna pero <b>Courtois</b> sacó una gran mano pero a la tercera llego la vencida y temprano se puso por delante en el marcador, pero un gran Isco que fue la sorpresa en el once inicial el malagueño puso <b>mágia</b> para darle la vuelta al marcador,con goles de Isco, Ramos, Lucas y Jovic.
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Introduccion"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Biografia"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Triunfos"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#Introduccion" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#Introduccion"></a>
+                        <a class="dropdown-item" href="#Introduccion"></a>
+                        <a class="dropdown-item" href="#Introduccion"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Noticias Deportivas</h1>
+            </div>
+        </div>
+
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Fútbol</h4>
+            <p><h5>El Real Madrid lider de la liga</h5>
+                <br>El Real Madrid junto con un <b>gran</b> Isco Alarcón sigue lider de la liga 19-20, seguido del <b>Barcelona</b> que sigue de cerca al líder a solo 3 puntos de diferencia.</br></p>
+            <hr>
+            <p class="mb-0"><center><img src="https://www.diariogol.com/uploads/s1/10/13/89/64/isco-alarcon-y-fede-valverde_15_970x597.jpeg" alt="Isco y Valverde"width=600></center></p>
+        </div>
+
+
+        <hr>
+        <p>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Partido entre Real Madrid y el Osasuna
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <br>Ganó el <b>Real Madrid </b>1-4 frente a un <b>Osasuna</b> que empezo marcando y en varias ocasiones les metió en problemas, varios intentos del Osasuna pero <b>Courtois</b> sacó una gran mano pero a la tercera llego la vencida y temprano se puso por delante en el marcador, pero un gran Isco que fue la sorpresa en el once inicial el malagueño puso <b>mágia</b> para darle la vuelta al marcador,con goles de Isco, Ramos, Lucas y Jovic.
 Vinícius tuvo un par de opciones, pero fue Jovic quien remató de volea un pase de Valverde, que llegó sobrado al final del partido. Triunfo de mérito para fortalecer el liderato y presionar al Barça. <br/>
 <center><img src="https://s1.eestatic.com/2019/09/24/elbernabeu/futbol/Real_Madrid-Club_Atletico_Osasuna-La_Liga-Futbol_431717075_134498104_1706x960.jpg" alt="Madrid vs Osasuna"width=600></center>
-<h3>Partido entre Betis y Barcelona</h3>
-<br>El <b>Barça</b> se recuperó de la eliminación copera con una trabajada victoria en el regreso de <b>Quique Setién</b> al Benito Villamarín. Un partido que comenzó con una pitada generalizada de la grada por los últimos arbitrajes al Betis y que acabó con una pitada aún mayor por la labor de Sánchez Martínez debido a que en los dos últimos goles azulgrana pudo haber falta de Lenglet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Partido entre Betis y Barcelona
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <br>El <b>Barça</b> se recuperó de la eliminación copera con una trabajada victoria en el regreso de <b>Quique Setién</b> al Benito Villamarín. Un partido que comenzó con una pitada generalizada de la grada por los últimos arbitrajes al Betis y que acabó con una pitada aún mayor por la labor de Sánchez Martínez debido a que en los dos últimos goles azulgrana pudo haber falta de Lenglet.
 El arranque no pudo ser más <b>eléctrico</b>. Mucho ritmo y juego ofensivo por ambas partes. A los cinco minutos ya ganaba el <b>Betis</b> tras una jugada de Fekir por banda izquierda que acabó con dos regates y un disparo que dio en el brazo de Lenglet. <b>Penalti </b>tras revisión del VAR y gol de Canales.
 Pero el Barça reaccionó bien y sólo tres minutos después <b>empató </b>tras controlar De Jong con el pecho un pase medido de Messi y batir desde cerca a Joel.
 Fekir -vaya primera parte la suya- aprovechó una pérdida de balón de Arturo Vidal para irse en velocidad y batir a Ter Stegen de disparo cruzado. La primera media hora del francés fue excelente, no sólo participó en los dos goles béticos si no que también provocó tres tarjetas para Lenglet, Sergi Roberto y Arturo Vidal. No había forma de pararle.
@@ -26,12 +112,29 @@ Sergi Roberto se jugó la expulsión con una entrada sobre Aleñá que parecía 
 En la reanudación Messi tuvo el 2-3 al minuto pero Joel desvió a córner su remate. El ritmo alto se mantuvo y había más huecos a la hora de atacar. 
 Rubi dio 20 minutos a Joaquín buscando romper por banda. Pero nada más salir el 17 bético llegó el 2-3, de nuevo a balón parado. Messi saca una falta y Lenglet gana el salto a Guido Rodríguez para batir a Joel. <br/>
 <center><img src="https://90l.tribuna.com/images/37/32/11/3732114e2f8e477dbc770c987f707c86500x500@2x.jpg" alt="Betis vs Barcelona"width=600></center>
-<h3>Partido entre Atlético de Madrid y Granada</h3>
-<br>Agradeciendo que apenas se prolongaran dos minutos y festejando la victoria como si se hubiera conseguido mucho más de lo que conseguía, que en todo caso no era poco. Así concluyó el encuentro un Atlético <b>absolutamente sometido</b> por el Granada en el segundo acto. Conviene recordar en ese aspecto que fue el conjunto nazarí quien tuvo partido entre semana, por si hay quien sigue aplaudiendo la preparación física rojiblanca. El equipo de Simeone volvió a convertir el fútbol en una sesión de tortura de la que en todo caso escapó ileso esta vez, mitad por lo de siempre, Oblak negando el gol rival, mitad por lo de casi nunca, Correa (o el que sea, pero Correa) afirmando el propio muchísimo antes, prácticamente en el arranque del partido.
-<center><img src="https://i.ytimg.com/vi/p9pDAo839us/maxresdefault.jpg" alt="Atléti vs Granada"width=600></center>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Partido entre Atlético de Madrid y Granada
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <br>Agradeciendo que apenas se prolongaran dos minutos y festejando la victoria como si se hubiera conseguido mucho más de lo que conseguía, que en todo caso no era poco. Así concluyó el encuentro un Atlético <b>absolutamente sometido</b> por el Granada en el segundo acto. Conviene recordar en ese aspecto que fue el conjunto nazarí quien tuvo partido entre semana, por si hay quien sigue aplaudiendo la preparación física rojiblanca. El equipo de Simeone volvió a convertir el fútbol en una sesión de tortura de la que en todo caso escapó ileso esta vez, mitad por lo de siempre, Oblak negando el gol rival, mitad por lo de casi nunca, Correa (o el que sea, pero Correa) afirmando el propio muchísimo antes, prácticamente en el arranque del partido.
+                        <center><img src="https://i.ytimg.com/vi/p9pDAo839us/maxresdefault.jpg" alt="Atléti vs Granada"width=600></center
+                    </div>
+                </div>
+            </div>
+        </p>
 <h2><center>Premier League</center></h2>
 <h4>-Cuando se fue Coutinho sólo perdimos un partido el resto de la temporada-</h4>
-<br><b>Coutinho no seguirá la próxima en el Bayern Munich</b>, que no ejercerá su opción de compra y el Barcelona ha empezado a ver un posible destino para el brasileño, que no entra dentro de los planes del conjunto azulgrana. La Premier parece un destino propicio para el jugador con varios equipos interesados. Se habló incluso de un regreso al Liverpool, algo que ahora parece descartado a tenor de las palabras de su director ejecutivo.Peter Moore no pudo mostrarse más satisfecho con su venta al Barça. "Cuando Philippe Coutinho se fue hubo un cambio, no sólo en la estructura del equipo, sino también en la forma de jugar al fútbol. Si recuerdas, cuando se marchó hace dos años, hubo un cambio completo del estilo de juego y sólo perdimos un partido durante el resto de la temporada", dijo el ejecutivo al diario 'Mirror'.<br/>
+<br><b>Coutinho no seguirá la próxima en el Bayern Munich</b>El fútbol club Barcelona dice, que no ejercerá su opción de compra y el Barcelona ha empezado a ver un posible destino para el brasileño, que no entra dentro de los planes del conjunto azulgrana. La Premier parece un destino propicio para el jugador con varios equipos interesados. Se habló incluso de un regreso al Liverpool, algo que ahora parece descartado a tenor de las palabras de su director ejecutivo.Peter Moore no pudo mostrarse más satisfecho con su venta al Barça. "Cuando Philippe Coutinho se fue hubo un cambio, no sólo en la estructura del equipo, sino también en la forma de jugar al fútbol. Si recuerdas, cuando se marchó hace dos años, hubo un cambio completo del estilo de juego y sólo perdimos un partido durante el resto de la temporada", dijo el ejecutivo al diario 'Mirror'.<br/>
 <center><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/02/12/15814990305742.jpg" alt="Couthinho"width=600></center>
 <h4>-La mareante oferta que haría la Juventus por Van Dijk-</h4>
 <br>El diario británico 'The Sun' ha informado este martes que <b>la Juventus iría con todo para fichar a Virgil van Dijk</b>. En esas informaciones, la cantidad desorbitante que pondría encima de la mesa el campeón italiano sería de 180 millones de euros.Esa cantidad situaría al holandés en el primer puesto como transferencia de defensa más caro, superando a Harry Maguire, por el que el Manchester United pagó el último verano 87 millones.Hace tres años, Van Dijk fue el defensa más caro al pagar el Liverpool al Southampton 84,65 millones, según el portal Transfermakt.<br/>
@@ -83,16 +186,16 @@ Haaland, por cierto, es el primer jugador de toda la historia del Dortmund en ma
     
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
-          <div class="col"><b>Cristiano Ronaldo 451 goles</b></div>
-          <div class="col"><b>Raúl González 323 goles</b></div>
-          <div class="col"><b>Alfredo Di Stéfano 308 goles</b></div>
-          <div class="col"><b>Carlos Santillana 290 goles</b></div>
-          <div class="col"><b>Ferenc Puskas 242 goles</b></div>
-          <div class="col"><b>Karim Benzema 239 goles</b></div>
-          <div class="col"><b>Hugo Sánchez 208 goles</b></div>
-          <div class="col"><b>Paco Gento 182 goles</b></div>
-          <div class="col"><b>José Martínez 172 goles</b></div>
-          <div class="col"><b>Emilio Butragueño 171 goles</b></div>
+          <div class="col"><b>1º Cristiano Ronaldo 451 goles</b></div>
+          <div class="col"><b>2º Raúl González 323 goles</b></div>
+          <div class="col"><b>3º Alfredo Di Stéfano 308 goles</b></div>
+          <div class="col"><b>4º Carlos Santillana 290 goles</b></div>
+          <div class="col"><b>5º Ferenc Puskas 242 goles</b></div>
+          <div class="col"><b>6º Karim Benzema 239 goles</b></div>
+          <div class="col"><b>7º Hugo Sánchez 208 goles</b></div>
+          <div class="col"><b>8º Paco Gento 182 goles</b></div>
+          <div class="col"><b>9º José Martínez 172 goles</b></div>
+          <div class="col"><b>10º Emilio Butragueño 171 goles</b></div>
 
         </div>
       </div>
@@ -101,7 +204,7 @@ Haaland, por cierto, es el primer jugador de toda la historia del Dortmund en ma
     
     </body>
       
-      
+    
    
       
 
